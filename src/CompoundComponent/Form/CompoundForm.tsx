@@ -1,6 +1,8 @@
 import React, { ReactNode, useState } from "react";
 import CompoundFormContext from "./CompoundFormContext";
 import CompoundFormInput from "./CompoundFormInput";
+import CompoundFormLabel from "./CompoundFormLabel";
+import "./CompoundForm.css";
 
 interface ICompoundFormProps {
   children: ReactNode;
@@ -13,10 +15,13 @@ function CompoundForm({ children }: ICompoundFormProps) {
 
   return (
     <CompoundFormContext.Provider value={{ isFocus, setIsFocus }}>
-      <div>{children}</div>
+      <div className={isFocus ? "in-focus-input" : "out-focus-input"}>
+        {children}
+      </div>
     </CompoundFormContext.Provider>
   );
 }
 
 CompoundForm.Input = CompoundFormInput;
+CompoundForm.Label = CompoundFormLabel;
 export default CompoundForm;

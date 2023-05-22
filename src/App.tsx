@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <CompoundForm>
         <CompoundForm.Input onChange={() => {}} />
+        <CompoundForm.Label title="테스트" />
       </CompoundForm>
     </div>
   );
