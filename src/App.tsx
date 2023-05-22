@@ -6,9 +6,8 @@ import CompoundForm from "./CompoundComponent/Form/CompoundForm";
 function App() {
   return (
     <div className="App">
-      adsfasfsadf
       <CompoundForm>
-        <div></div>
+        <CompoundForm.Input onChange={() => {}} />
       </CompoundForm>
     </div>
   );

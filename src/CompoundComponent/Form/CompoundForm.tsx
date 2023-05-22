@@ -1,5 +1,6 @@
 import React, { ReactNode, useState } from "react";
 import CompoundFormContext from "./CompoundFormContext";
+import CompoundFormInput from "./CompoundFormInput";
 
 interface ICompoundFormProps {
   children: ReactNode;
@@ -17,4 +18,5 @@ function CompoundForm({ children }: ICompoundFormProps) {
   );
 }
 
+CompoundForm.Input = CompoundFormInput;
 export default CompoundForm;
