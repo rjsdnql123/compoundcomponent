@@ -1,5 +1,5 @@
 import React from "react";
-import { useCompoundFormContext } from "./CompoundFormContext";
+import { useCompoundFormContext } from "@compoundCom/Form/CompoundFormContext";
 
 interface ICompoundFormInputProps {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
