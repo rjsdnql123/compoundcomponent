@@ -1,7 +1,11 @@
 import React from "react";
 import { useCompoundFormContext } from "./CompoundFormContext";
 
-function CompoundFormInput({ onChange }: any) {
+interface ICompoundFormInputProps {
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}
+
+function CompoundFormInput({ onChange }: ICompoundFormInputProps) {
   const { setIsFocus } = useCompoundFormContext();
 
   const onClickInFoucs = () => {
