@@ -1,4 +1,4 @@
-{
+{  
   "compilerOptions": {
     "target": "es5",
     "lib": [
@@ -19,16 +19,10 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "jsxImportSource": "@emotion/react",
-    "baseUrl": "./src", 
-    "paths": {
-      "@compoundCom/*": ["CompoundComponent/*"],
-      "@/*": [
-        "src/*"
-      ]
-    }
+    "jsxImportSource": "@emotion/react"
   },
   "include": [
     "src"
-  ]
+  ],
+  "extends": "./tsconfig.paths.json"
 }
