@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import CompoundForm from "./CompoundComponent/Form/CompoundForm";
+import CompoundForm from "@compoundCom/Form/CompoundForm";
 
 function App() {
   const onChangeCompoundInput = (

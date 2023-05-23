@@ -18,7 +18,15 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "baseUrl": "./src", 
+    "paths": {
+      "@compoundCom/*": ["CompoundComponent/*"],
+      "@/*": [
+        "src/*"
+      ]
+    }
   },
   "include": [
     "src"
